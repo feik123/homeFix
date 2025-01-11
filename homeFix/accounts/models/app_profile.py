@@ -77,7 +77,7 @@ class ContractorProfile(Profile):
             choices=JobCategory.choices,
         ),
         blank=True,
-        default=JobCategory.OTHER,
+        default=JobCategory,
     )
 
     experience = models.SmallIntegerField(
